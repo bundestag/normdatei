@@ -1,9 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
     name='normdatei',
-    version='0.1',
+    version='0.2',
     description="Reference data for the German parliament",
     long_description="",
     classifiers=[
@@ -20,7 +20,7 @@ setup(
     author_email='friedrich@pudo.org',
     url='http://github.com/bundestag/normdatei',
     license='MIT',
-    py_modules=['normdatei'],
+    packages=find_packages(exclude=['ez_setup', 'examples', 'test']),
     namespace_packages=[],
     include_package_data=True,
     zip_safe=True,
